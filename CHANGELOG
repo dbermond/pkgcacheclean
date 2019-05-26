@@ -1,0 +1,49 @@
+## pkgcacheclean
+Application to clean the pacman cache on Arch Linux
+https://github.com/dbermond/pkgcacheclean/
+
+### changelog
+
+### version 1.9.0 - 2017-09-07
+- added human readable removed files size
+
+### version 1.8.2 - unknown date
+- fix a bug that occurs when -d receives an argument without a trailing slash
+
+### version 1.8.1 - unknown date
+- rename -k option to better the format help information
+
+### version 1.8 - unknown date
+- add option -k to treat uninstalled packages as installed
+
+### version 1.7.1 - unknown date
+- pacman 4.1 compatibility
+- remove redundant free of package list
+
+### version 1.7 - unknown date
+- add option to configure cachedir
+
+### version 1.6.1 - unknown date
+- fix some warning under x86_64. No functional change.
+
+### version 1.6 - unknown date
+- move to pacman 4
+
+### version 1.5 - unknown date
+- added -n/--dry-run option, thanks to ber_t
+
+### version 1.4 - unknown date
+- support pacman 3.5
+
+### version 1.3 - unknown date
+- move uid check later to eliminate unnecessary password typing to see the usage
+- add a little options
+
+### version 1.2 - unknown date
+- major speed boost by getting cached package information from its filename
+
+### version 1.1 - unknown date
+- early quit if called by normal user
+
+### version 1.0 - unknown date
+- initial release

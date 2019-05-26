@@ -1,0 +1,31 @@
+## pkgcacheclean
+Application to clean the pacman cache on Arch Linux
+https://github.com/dbermond/pkgcacheclean/
+
+### Installation instructions
+
+A Makefile is provided for building the application. A simple installation
+procedure would be:
+```
+$ make
+$ sudo make install
+```
+
+The provided Makefile supports the `DESTDIR` variable for staged
+installations. Other common variables are also supported for the `install`
+target, like `PREFIX`, `BINDIR`, and `MANDIR`. For example:
+```
+$ make
+$ sudo make DESTDIR='./pkg' PREFIX='/usr' install
+```
+
+You can also tweak the build flags by setting the `CPPFLAGS`, `CFLAGS` and
+`LDFLAGS` variables. The compiler can be choosen through the `CC` variable
+and defaults to `gcc`. Compiler warnings are controled by the `WARNS`
+variable and defaults to `-Wall`.
+
+### Uninstall
+
+Use the make `uninstall` target. It also supports the same variables of the
+`install` target. For proper uninstallation, these variables must be used
+with the same values used in the `install` target.
